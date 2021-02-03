@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="test.LoginTest" duration-ms="8" started-at="2021-02-02T20:49:07 EST" finished-at="2021-02-02T20:49:07 EST">
+  <suite name="test.LoginTest" duration-ms="41768" started-at="2021-02-02T22:45:01 EST" finished-at="2021-02-02T22:45:43 EST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="8" started-at="2021-02-02T20:49:07 EST" finished-at="2021-02-02T20:49:07 EST">
+    <test name="Command line test" duration-ms="41768" started-at="2021-02-02T22:45:01 EST" finished-at="2021-02-02T22:45:43 EST">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="userWithValidCredentialsShouldBeAbleToLogin()[pri:1, instance:test.LoginTest@47c62251]" name="userWithValidCredentialsShouldBeAbleToLogin" duration-ms="12191" started-at="2021-02-02T22:45:01 EST" finished-at="2021-02-02T22:45:13 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userWithValidCredentialsShouldBeAbleToLogin -->
+        <test-method status="PASS" signature="userWithInvalidPasswordShouldNotBeAbleToLogin()[pri:2, instance:test.LoginTest@47c62251]" name="userWithInvalidPasswordShouldNotBeAbleToLogin" duration-ms="7235" started-at="2021-02-02T22:45:13 EST" finished-at="2021-02-02T22:45:20 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userWithInvalidPasswordShouldNotBeAbleToLogin -->
+        <test-method status="PASS" signature="userWithInvalidUsernameShouldNotBeAbleToLogin()[pri:3, instance:test.LoginTest@47c62251]" name="userWithInvalidUsernameShouldNotBeAbleToLogin" duration-ms="6937" started-at="2021-02-02T22:45:20 EST" finished-at="2021-02-02T22:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userWithInvalidUsernameShouldNotBeAbleToLogin -->
+        <test-method status="PASS" signature="userWithValidEmailShouldBeAbleToResetPassword()[pri:4, instance:test.LoginTest@47c62251]" name="userWithValidEmailShouldBeAbleToResetPassword" duration-ms="7797" started-at="2021-02-02T22:45:27 EST" finished-at="2021-02-02T22:45:35 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userWithValidEmailShouldBeAbleToResetPassword -->
+        <test-method status="PASS" signature="userWithInvalidEmailShouldNotBeAbleToResetPassword()[pri:5, instance:test.LoginTest@47c62251]" name="userWithInvalidEmailShouldNotBeAbleToResetPassword" duration-ms="7571" started-at="2021-02-02T22:45:35 EST" finished-at="2021-02-02T22:45:43 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userWithInvalidEmailShouldNotBeAbleToResetPassword -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Command line test -->
   </suite> <!-- test.LoginTest -->
 </testng-results>

@@ -37,10 +37,11 @@ public class LoginPage extends BasePage{
 		Thread.sleep(2000);
 	}
 	
-	public void resetPassword(String username) {
+	public void resetPassword(String username) throws InterruptedException {
 		FORGOT_PASSWORD_BUTTON.click();
 		USERNAME_FIELD.sendKeys(username);
 		RESET_PASSWORD_BUTTON.click();
+		Thread.sleep(2000);
 	}
 	
 	public void validateHomePage() {
@@ -54,14 +55,12 @@ public class LoginPage extends BasePage{
 	}
 	
 	public void validatePasswordResetMessage() throws InterruptedException {
-		Thread.sleep(3000);
 		String expectedErrorMessage = "Check your email to reset Password";
 		String actualErrorMessage = PASSWORD_RESET_MESSAGE.getText().substring(1).trim();
 		Assert.assertEquals(actualErrorMessage, expectedErrorMessage,"password reset message not visible");
 	}
 	
 	public void validatePasswordResetErrorMessage() throws InterruptedException {
-		Thread.sleep(2000);
 		String expectedErrorMessage = "User Not Found!";
 		String actualErrorMessage = ERROR_MESSAGE.getText().substring(1).trim();
 		Assert.assertEquals(actualErrorMessage, expectedErrorMessage,"error message not visible");
